@@ -11,7 +11,7 @@
     </div>
     <div id="content" style="display:none">
         <table width="100%">
-            <tr>
+            <tr style="display:none">
                 <td></td>
                 <td>
                     <h1 style="font-weight:500;">Cathy</h1>
@@ -79,7 +79,7 @@
                     </select>
                 </td>
             </tr>
-            <tr >
+            <tr style="display:none">
                 <td align="right">Input:</td>
                 <td align="left">
                     <select id="inputSource">
@@ -223,7 +223,7 @@
                         console.log(JSON.stringify(event.Result)); // check console for other information in result
                         break;
                     case "SpeechSimplePhraseEvent" :
-                        UpdateRecognizedPhrase(JSON.stringify(event.Result, null, 3));
+                        UpdateRecognizedPhrase(JSON.stringify(event.Result.DisplayText, null, 3));
                         break;
                     case "SpeechDetailedPhraseEvent" :
                         UpdateRecognizedPhrase(JSON.stringify(event.Result, null, 3));

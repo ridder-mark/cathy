@@ -49,6 +49,7 @@
     "preRelease": "npm install & gulp preRelease"
   },
   "dependencies": {
-    "naudiodon": "^0.4.7"
+    "naudiodon": "^0.4.7",
+    "sentiment": "^5.0.1"
   }
 }
